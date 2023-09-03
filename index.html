@@ -3,18 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertex HTML Template</title>
+    <title>Abrar & Aljosa</title>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
     <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
     <link rel="stylesheet" href="css/tooplate-vertex.css">
-<!--
 
-Tooplate 2124 Vertex
-
-https://www.tooplate.com/view/2124-vertex
-
--->
 
 </head>
 <style>
@@ -79,12 +73,44 @@ https://www.tooplate.com/view/2124-vertex
             margin-bottom: 20px; /* Add spacing between paragraphs on mobile */
         }
     }
-    
+/* Style for the overlay background */
+.overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 2;
+        }
+
+        /* Style for the pop-up container */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            z-index: 3;
+        }
+
+        /* Style for the close button */
+        .popup-close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+        }
 </style>
 
 
 
-<body>
+<body style="overflow: hidden;">
     <!-- Page Loader -->
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -93,6 +119,17 @@ https://www.tooplate.com/view/2124-vertex
         <div class="loader-section section-right"></div>
 
     </div>
+
+    <!-- The overlay background -->
+<!-- <div id="overlay" class="overlay"></div> -->
+
+<!-- The pop-up container -->
+<!-- <div id="popup" class="popup-container">
+    <span class="popup-close" onclick="closePopup()">&times;</span>
+    <h2>Notification Title</h2>
+    <p>This is a sample pop-up notification.</p>
+    <button onclick="closePopup()">Continue</button>
+</div> -->
 
     <!-- Site logo -->
     <!-- <h1 class="tm-brand">
@@ -198,6 +235,9 @@ https://www.tooplate.com/view/2124-vertex
             <!-- <div class="tm-section-col tm-content" data-parallax="scroll" data-image-src="img/photo5.jpg"></div> -->
         </div> <!-- #services -->
 
+      
+        
+
         <div id="gallery" class="tm-content tm-content-small-top">
             <div class="tm-gallery-container">
                 <h2 class="tm-text-primary tm-text-center">Flight & Schedule</h2>
@@ -217,9 +257,96 @@ https://www.tooplate.com/view/2124-vertex
                 <div class="tm-text-center">
                     <a href="#services" class="tm-btn tm-btn-next">Book your Flight</a>
                 </div>
-               
+                <div id="intro" class="tm-section">
+         
+                    <!-- Intro left -->
+                    <div class="tm-section-col tm-content">
+                        <div class="tm-media fa-border" style="padding: 50px;">
+                            
+                            <div class="tm-media-body ">
+                                <h2 class="tm-text-center">DAY 1</h2>
+                                <hr class="tm-hr tm-mr">
+                                <div class="tm-row">
+                                    <div class="tm-col">
+                                        <div class="tm-text-center tm-my-10">
+                                            <i class="fas fa-clock fa-2x"></i>
+                                        </div>                        
+                                        <p class="tm-mb-20 tm-text-small tm-text-center">AFTERNOON </p>
+                                    </div>
+                                    <div class="tm-col">
+                                        <div class="tm-text-center tm-my-10">
+                                            <i class="fas fa-tree fa-2x"></i>
+                                        </div>                        
+                                        <p class="tm-mb-20 tm-text-small tm-text-center">SOUTH PALMS RESORT</p>
+                                    </div>
+                                </div> 
+                                <h2 class="tm-text-center">SCHEDULE</h2>
+                                <hr class="tm-hr tm-mr">
+                                <table style = "width:100%">
+                                    <tr><td>2PM - Let's drink and hit the beach.</td></tr>
+                                    <tr><td>4PM - Let's get entertained.</td></tr>
+                                    <tr><td>5PM - Let's watch the sunset.</td></tr>
+                                    <tr><td>7PM - Let's drink again.</td></tr>
+
+                                </table>
+                                <p class="tm-mb-20 tm-text-small" style="text-align: justify;"></p>
+                                
+                                <div class="tm-text-center">
+                                    <a href="#services" class="tm-btn tm-btn-next">Next page</a>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        
+                       
+                    </div>
+                    
+                    <!-- Intro right -->
+                    <div class="tm-section-col tm-content">
+                        <div class="tm-media fa-border" style="padding: 50px;">
+                            
+                            <div class="tm-media-body ">
+                                <h2 class="tm-text-center">DAY 1</h2>
+                                <hr class="tm-hr tm-mr">
+                                <div class="tm-row">
+                                    <div class="tm-col">
+                                        <div class="tm-text-center tm-my-10">
+                                            <i class="fas fa-clock fa-2x"></i>
+                                        </div>                        
+                                        <p class="tm-mb-20 tm-text-small tm-text-center">AFTERNOON </p>
+                                    </div>
+                                    <div class="tm-col">
+                                        <div class="tm-text-center tm-my-10">
+                                            <i class="fas fa-tree fa-2x"></i>
+                                        </div>                        
+                                        <p class="tm-mb-20 tm-text-small tm-text-center">SOUTH PALMS RESORT</p>
+                                    </div>
+                                </div> 
+                                <h2 class="tm-text-center">SCHEDULE</h2>
+                                <hr class="tm-hr tm-mr">
+                                <table style = "width:100%">
+                                    <tr><td>2PM - Let's drink and hit the beach.</td></tr>
+                                    <tr><td>4PM - Let's get entertained.</td></tr>
+                                    <tr><td>5PM - Let's watch the sunset.</td></tr>
+                                    <tr><td>7PM - Let's drink again.</td></tr>
+
+                                </table>
+                                <p class="tm-mb-20 tm-text-small" style="text-align: justify;"></p>
+                                
+                                <div class="tm-text-center">
+                                    <a href="#services" class="tm-btn tm-btn-next">Next page</a>
+                                </div> 
+                            </div>
+                        </div>
+                        
+                        
+                       
+                    </div>
+                </div> <!-- #intro -->
             </div>
         </div>
+
+        
 
         
 
@@ -234,7 +361,6 @@ https://www.tooplate.com/view/2124-vertex
                             <img src="img/gallery/tn/img-01.jpg" alt="Image"/>
                             <figcaption>
                                 <h2>Chocolate Hills</h2>
-                                <i class="fa-location-arrow"></i>
                                 <p>Carmen, Bohol</p>
                                 <a href="img/gallery/img-01.jpg">View more</a>
                             </figcaption>			
@@ -459,6 +585,28 @@ https://www.tooplate.com/view/2124-vertex
                 seeLessButton.style.display = "none";
             }
         }
+    </script>
+    <script>
+        // JavaScript to show the overlay and pop-up
+        function showPopup() {
+            var overlay = document.getElementById('overlay');
+            var popup = document.getElementById('popup');
+            overlay.style.display = 'block';
+            popup.style.display = 'block';
+        }
+    
+        // JavaScript to close the overlay and pop-up
+        function closePopup() {
+            var overlay = document.getElementById('overlay');
+            var popup = document.getElementById('popup');
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        }
+    
+        // Automatically show the pop-up when the page loads
+        window.onload = function() {
+            showPopup();
+        };
     </script>
 </body>
 </html>

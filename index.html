@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrar & Aljosa</title>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
     <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
     <link rel="stylesheet" href="css/tooplate-vertex.css">
@@ -12,6 +13,36 @@
 
 </head>
 <style>
+@font-face {
+  font-family: 'TropicaGardensSans';
+  src: url("../2124_vertex/fontawesome/Tropica_Gardens/tropica-gardens-sans.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TropicaGardensScript';
+  src: url("../2124_vertex/fontawesome/Tropica_Gardens/tropica-gardens-script.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TropicaGardensSerif';
+  src: url("../2124_vertex/fontawesome/Tropica_Gardens/tropica-gardens-serif.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TropikaIslandInt';
+  src: url("../wedding/fonts/Tropika_Island/Tropika_Island_Int.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TropikaIslandScript';
+  src: url("../wedding/fonts/Tropika_Island/Tropika_Island_Script_Casual.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
      .tm-section-col.tm-parallax .tm-content{
         position: absolute; 
         bottom: 20%; 
@@ -65,6 +96,9 @@
 #storyParagraph1, #storyParagraph2, #storyParagraph3 {
  display: none;
 		}
+p{
+    font-family: 'Work Sans';
+}
         @media (max-width: 768px) {
         /* Adjust the styles for the paragraphs on mobile */
         .mobile-paragraph {
@@ -106,6 +140,39 @@
             right: 5px;
             cursor: pointer;
         }
+#flight{
+    width: 40%;
+    font-size: 2rem;
+}
+@media (max-width: 768px) {
+        /* Adjust the styles for the paragraphs on mobile */
+        #flight{
+    width: 80%;
+    font-size: 1rem;
+}
+    }
+    /* Styles for the carousel container */
+    .carousel-container {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        /* Styles for individual carousel items */
+        .carousel-item {
+            flex: 0 0 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* Styles for the carousel navigation buttons */
+        .carousel-button {
+            cursor: pointer;
+        }
+
+        /* Style to hide the navigation buttons */
+        /* .hidden {
+            display: none;
+        } */
 </style>
 
 
@@ -121,15 +188,15 @@
     </div>
 
     <!-- The overlay background -->
-<div id="overlay" class="overlay"></div>
+<!-- <div id="overlay" class="overlay"></div> -->
 
 <!-- The pop-up container -->
-<div id="popup" class="popup-container">
+<!-- <div id="popup" class="popup-container">
     <span class="popup-close" onclick="closePopup()">&times;</span>
     <h2>Notification Title</h2>
     <p>This is a sample pop-up notification.</p>
     <button onclick="closePopup()">Continue</button>
-</div>
+</div> -->
 
     <!-- Site logo -->
     <!-- <h1 class="tm-brand">
@@ -177,19 +244,18 @@
             <!-- Intro left -->
             <div class="tm-section-col tm-content" id="intro-content" style="height: 780px;text-align: center;">
                 <div class="tm-content" >
-                    <h1 style="font-family: 'Ora Sepira'; margin: 0;">Abrar & Aljosa</h1>
-                   
+                    <!-- <h1 style="font-family: 'Ora Sepira'; margin: 0;">Abrar & Aljosa</h1> -->
+                    <h2 class="tm-text-primary tm-text-center" style="font-family: 'TropicaGardensSans'; line-height: normal;">Thursday <br> May 2, 2024 </h2>
+                    <h2 class="tm-text-primary tm-text-center" style="font-family: 'TropicaGardensSans';">Panglao, Bohol, Philippines</h2>
+                    <div class="simply-countdown simply-countdown-one"></div>
+                    <a href="#gallery" class="tm-btn tm-btn-next">RVSP</a>
                 </div>
-                <h2 class="tm-text-primary tm-text-center">Thursday | May 2, 2024</h2>
-                <h2 class="tm-text-primary tm-text-center">Panglao, Bohol, Philippines</h2>
-               
-                <a href="#gallery" class="tm-btn tm-btn-next">RVSP</a>
                 
                           
             </div>
             
             <!-- Intro right -->
-            <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="img/photo2.jpg">
+            <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="img/section-bg (3).png">
                 <!-- <div class="tm-content" >
                     <h1 style="font-family: 'Ora Sepira'; margin: 0;">Abrar & Aljosa</h1>
                     <p style="font-weight: bold; margin: 0;">May 2, 2024 | Panglao, Bohol, Philippines</p>
@@ -200,10 +266,10 @@
 
         <div id="services" class="tm-section">
             <!-- Services right -->
-            <div class="tm-section-col tm-content" data-parallax="scroll" data-image-src="img/photo5.jpg"></div>
+            <div class="tm-section-col" data-parallax="scroll" data-image-src="img/photo5.jpg"></div>
             <!-- Services left -->
-            <div class="tm-section-col tm-content" style="height: 780px;text-align: justify;">
-                <h2 class="tm-text-primary" style="text-align: center;">Our Story</h2>
+            <div class="tm-section-col tm-content" style="height: 780px;text-align: justify; background-color: #a48170; color: #ffffff;">
+                <h2 class="tm-text-primary" style="text-align: center; font-family: 'TropicaGardensSans';">Our Story</h2>
                 <p class="mobile-paragraph" > Welcome to the 'Our Story' section, where the pages of destiny unfold to reveal the captivating narrative of love, laughter, and togetherness. 
                     Join us on a journey that transcends borders and cultures, as we delve into the heartwarming union of Abrar and Aljosa.</p>
 
@@ -211,9 +277,9 @@
                     From chance encounters to shared moments that ignited a spark, every chapter is a celebration of two lives destined to intertwine. 
                     Through every laugh, every tear, and every leap of faith, Abrar and Aljosa's bond grew stronger, illuminating the path to a love that knows no boundaries. </p>
                 
-                    <div class="tm-text-right">
+                    <!-- <div class="tm-text-right">
                         <a href="index.html" class="tm-btn tm-btn-next see-more">Read More</a>
-                    </div>   
+                    </div>    -->
 
                 <p id="storyParagraph1" class="mobile-paragraph">As we turn the pages of their journey, you will discover the threads of their individual lives weaving together into a beautiful tapestry of companionship. 
                     With cultural richness and diverse backgrounds, their wedding is not just a union of two souls, but a merging of traditions, creating a vibrant and harmonious 
@@ -240,7 +306,7 @@
 
         <div id="gallery" class="tm-content tm-content-small-top">
             <div class="tm-gallery-container">
-                <h2 class="tm-text-primary tm-text-center">Flight & Schedule</h2>
+                <h2 class="tm-text-primary tm-text-center">Program</h2>
                 <div class="tm-gallery tm-mb-80">
 
                     <video autoplay loop muted playsinline class="background-video" style="width: 100%; height: 100%; object-fit: cover;">
@@ -255,105 +321,107 @@
                    
                 </div>
                 <div class="tm-text-center">
-                    <a href="#services" class="tm-btn tm-btn-next">Book your Flight</a>
+                    <a href="#services" id="flight" class="tm-btn tm-btn-next">Book your Flight Now!</a>
                 </div>
-                <div id="intro" class="tm-section">
-         
-                    <!-- Intro left -->
-                    <div class="tm-section-col tm-content">
-                        <div class="tm-media fa-border" style="padding: 50px;">
-                            
-                            <div class="tm-media-body ">
-                                <h2 class="tm-text-center">DAY 1</h2>
-                                <hr class="tm-hr tm-mr">
-                                <div class="tm-row">
-                                    <div class="tm-col">
-                                        <div class="tm-text-center tm-my-10">
-                                            <i class="fas fa-clock fa-2x"></i>
-                                        </div>                        
-                                        <p class="tm-mb-20 tm-text-small tm-text-center">AFTERNOON </p>
-                                    </div>
-                                    <div class="tm-col">
-                                        <div class="tm-text-center tm-my-10">
-                                            <i class="fas fa-tree fa-2x"></i>
-                                        </div>                        
-                                        <p class="tm-mb-20 tm-text-small tm-text-center">SOUTH PALMS RESORT</p>
-                                    </div>
-                                </div> 
-                                <h2 class="tm-text-center">SCHEDULE</h2>
-                                <hr class="tm-hr tm-mr">
-                                <table style = "width:100%">
-                                    <tr><td>2PM - Let's drink and hit the beach.</td></tr>
-                                    <tr><td>4PM - Let's get entertained.</td></tr>
-                                    <tr><td>5PM - Let's watch the sunset.</td></tr>
-                                    <tr><td>7PM - Let's drink again.</td></tr>
-
-                                </table>
-                                <p class="tm-mb-20 tm-text-small" style="text-align: justify;"></p>
-                                
-                                <div class="tm-text-center">
-                                    <a href="#services" class="tm-btn tm-btn-next">Next page</a>
-                                </div> 
-                            </div>
-                        </div>
-                        
-                        
-                       
-                    </div>
-                    
-                    <!-- Intro right -->
-                    <div class="tm-section-col tm-content">
-                        <div class="tm-media fa-border" style="padding: 50px;">
-                            
-                            <div class="tm-media-body ">
-                                <h2 class="tm-text-center">DAY 1</h2>
-                                <hr class="tm-hr tm-mr">
-                                <div class="tm-row">
-                                    <div class="tm-col">
-                                        <div class="tm-text-center tm-my-10">
-                                            <i class="fas fa-clock fa-2x"></i>
-                                        </div>                        
-                                        <p class="tm-mb-20 tm-text-small tm-text-center">AFTERNOON </p>
-                                    </div>
-                                    <div class="tm-col">
-                                        <div class="tm-text-center tm-my-10">
-                                            <i class="fas fa-tree fa-2x"></i>
-                                        </div>                        
-                                        <p class="tm-mb-20 tm-text-small tm-text-center">SOUTH PALMS RESORT</p>
-                                    </div>
-                                </div> 
-                                <h2 class="tm-text-center">SCHEDULE</h2>
-                                <hr class="tm-hr tm-mr">
-                                <table style = "width:100%">
-                                    <tr><td>2PM - Let's drink and hit the beach.</td></tr>
-                                    <tr><td>4PM - Let's get entertained.</td></tr>
-                                    <tr><td>5PM - Let's watch the sunset.</td></tr>
-                                    <tr><td>7PM - Let's drink again.</td></tr>
-
-                                </table>
-                                <p class="tm-mb-20 tm-text-small" style="text-align: justify;"></p>
-                                
-                                <div class="tm-text-center">
-                                    <a href="#services" class="tm-btn tm-btn-next">Next page</a>
-                                </div> 
-                            </div>
-                        </div>
-                        
-                        
-                       
-                    </div>
-                </div> <!-- #intro -->
+                
             </div>
         </div>
 
         
+
+        <div id="intro" class="tm-section">
+            <!-- Intro left -->
+            <div class="tm-section-col tm-content" style="background-color: #a48170; color: #ffffff; padding-bottom: 0%;">
+                <div class="tm-media tm-text-center">
+                    <h2 class="tm-text-primary tm-text-center">DAY 1</h2>
+                    <hr class="tm-hr tm-ml tm-sm-mt-50">
+                    <div class="tm-media-body">
+                        <div class="tm-row">
+                            <div class="tm-col tm-text-center">
+                                <div class="tm-text-center" >
+                                    <i class="fas fa-clock fa-2x"></i>
+                                </div>                        
+                                <p>AFTERNOON</p>
+                            </div>
+                            <div class="tm-col tm-text-center">
+                                <div  >
+                                    <i class="fas fa-tree fa-2x"></i>
+                                </div>                        
+                                <p>SOUTH PALMS RESORT</p>
+                            </div>
+                        </div>
+                        <h2 class="tm-text-primary tm-text-center" style="font-size: 2rem;">Schedule</h2>
+                        <hr class="tm-hr tm-ml">
+                        <table style = "width:100%; margin-left: 5%; text-align: left;">
+                            <tr><td>2PM - Let's drink and hit the beach.</td></tr>
+                            <tr><td>4PM - Let's get entertained.</td></tr>
+                            <tr><td>5PM - Let's watch the sunset.</td></tr>
+                            <tr><td>7PM - Let's drink again.</td></tr>
+
+                        </table>
+                        
+                    </div>
+                </div>
+    
+                <div class="tm-media tm-text-center">
+                    <h2 class="tm-text-primary tm-text-center">DAY 2</h2>
+                    <hr class="tm-hr tm-ml">
+                    <div class="tm-media-body">
+                        <div class="tm-row">
+                            <div class="tm-col tm-text-center">
+                                <div class="tm-text-center" >
+                                    <i class="fas fa-clock fa-2x"></i>
+                                </div>                        
+                                <p>AFTERNOON</p>
+                            </div>
+                            <div class="tm-col tm-text-center">
+                                <div  >
+                                    <i class="fas fa-tree fa-2x"></i>
+                                </div>                        
+                                <p>SOUTH PALMS RESORT</p>
+                            </div>
+                        </div>
+                        <h2 class="tm-text-primary tm-text-center" style="font-size: 2rem;">Schedule</h2>
+                        <hr class="tm-hr tm-ml tm-sm-mt-50">
+                        <table style = "width:100%; margin-left: 5%; text-align: left;">
+                            <tr><td>2PM - Let's drink and hit the beach.</td></tr>
+                            <tr><td>4PM - Let's get entertained.</td></tr>
+                            <tr><td>5PM - Let's watch the sunset.</td></tr>
+                            <tr><td>7PM - Let's drink again.</td></tr>
+
+                        </table>
+                        
+                    </div>
+                </div>
+                
+                
+                  
+                
+            </div>
+            
+            <!-- Intro right -->
+            <div class="tm-section-col tm-parallax" data-parallax="scroll" style="background-color: #a48170;">
+                <div class="carousel-container">
+                    <!-- Carousel items -->
+                    <div class="carousel-item" ><img src="img/vertex-bg-01.jpg" alt="Image 1" ></div>
+                    <div class="carousel-item"><img src="img/vertex-bg-02.jpg" alt="Image 1"></div>
+                    
+                    <!-- Add more carousel items here -->
+                </div>
+                <div class="tm-text-center" style="margin-top: 2%;">
+                    <button class="carousel-button tm-btn tm-text-center" onclick="prevSlide()">DETAILS</button>
+                    <!-- <button class="carousel-button tm-btn tm-text-center" onclick="nextSlide()">DAY 2</button> -->
+                </div>
+                
+            </div>
+        </div> <!-- #intro -->
 
         
 
         
 
         <div id="contact" class="tm-section">
-            <div id="gallery" class="tm-content tm-content-small-top" style="background-image: url(/img/section-bg.png); background-repeat: no-repeat; background-size: cover; width: auto; height: auto;">
+            <div id="gallery" class="tm-content tm-content-small-top" style="background-color: #ffffff;">
                 <div class="tm-gallery-container">
                     <h2 class="tm-text-primary tm-text-center tm-gallery-header">Best Spots in Bohol</h2> 
                     <div class="tm-gallery tm-mb-80">
@@ -389,38 +457,8 @@
                                 <a href="img/gallery/img-04.jpg">View more</a>
                             </figcaption>			
                         </figure>
-                        <figure class="effect-goliath tm-gallery-item">
-                            <img src="img/gallery/tn/img-05.jpg" alt="Image"/>
-                            <figcaption>
-                                <h2>Number 5</h2>
-                                <p>Mobile Ready</p>
-                                <a href="img/gallery/img-05.jpg">View more</a>
-                            </figcaption>			
-                        </figure>
-                        <figure class="effect-goliath tm-gallery-item">
-                            <img src="img/gallery/tn/img-06.jpg" alt="Image"/>
-                            <figcaption>
-                                <h2>Number 6</h2>
-                                <p>Responsive Design</p>
-                                <a href="img/gallery/img-06.jpg">View more</a>
-                            </figcaption>			
-                        </figure>
-                        <figure class="effect-goliath tm-gallery-item">
-                            <img src="img/gallery/tn/img-07.jpg" alt="Image"/>
-                            <figcaption>
-                                <h2>Number 7</h2>
-                                <p>Custom HTML CSS</p>
-                                <a href="img/gallery/img-07.jpg">View more</a>
-                            </figcaption>			
-                        </figure>
-                        <figure class="effect-goliath tm-gallery-item">
-                            <img src="img/gallery/tn/img-08.jpg" alt="Image"/>
-                            <figcaption>
-                                <h2>Number 8</h2>
-                                <p>Template for you</p>
-                                <a href="img/gallery/img-08.jpg">View more</a>
-                            </figcaption>			
-                        </figure>
+                        
+                        
                         
                         
                         
@@ -431,12 +469,12 @@
                 </div>
             </div>
             <!-- Contact left -->
-            <div class="tm-section-col tm-content tm-content-small">
+            <div class="tm-section-col tm-content tm-content-small" style="background-color: #a48170; color: #ffffff;">
                 <h2 class="tm-text-primary">Contact Us</h2>
-                <p>
+                <!-- <p>
                     Pellentesque nec dui pellentesque, fermentum turpis eu, facilisis libero. Vestibulum fringilla nulla augue, at consequat metus facilisis condimentum.
-                </p> 
-                <form id="contact-form" action="" method="POST" class="tm-contact-form tm-mb-200">
+                </p>  -->
+                <!-- <form id="contact-form" action="" method="POST" class="tm-contact-form tm-mb-200">
                     <div class="form-group">
                         <input type="text" name="name" class="form-control rounded-0" placeholder="Name" required />
                     </div>
@@ -450,7 +488,7 @@
                     <div class="form-group tm-text-right">
                         <button type="submit" class="tm-btn">Send</button>
                     </div>
-                </form>
+                </form> -->
                            
             </div>
             
@@ -462,6 +500,7 @@
     </main>
 
     <script src="js/plugins.js"></script>
+    <script src="js/simplyCountdown.js"></script>
     <script>
         $(window).on("load", function() {
             $('body').addClass('loaded');
@@ -607,6 +646,50 @@
         window.onload = function() {
             showPopup();
         };
+    </script>
+    <script>
+        var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+    
+        // default example
+        simplyCountdown('.simply-countdown-one', {
+            year: d.getFullYear(),
+            month: d.getMonth() + 1,
+            day: d.getDate()
+        });
+    
+        //jQuery example
+        $('#simply-countdown-losange').simplyCountdown({
+            year: d.getFullYear(),
+            month: d.getMonth() + 1,
+            day: d.getDate(),
+            enableUtc: false
+        });
+    </script>
+    <script>
+        var currentSlide = 0;
+        var slides = document.querySelectorAll('.carousel-item');
+    
+        // Function to show the current slide
+        function showSlide() {
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.transform = 'translateX(-' + currentSlide + '%)';
+            }
+        }
+    
+        // Function to go to the previous slide
+        function prevSlide() {
+            currentSlide = (currentSlide - 100 + slides.length * 100) % (slides.length * 100);
+            showSlide();
+        }
+    
+        // Function to go to the next slide
+        function nextSlide() {
+            currentSlide = (currentSlide + 100) % (slides.length * 100);
+            showSlide();
+        }
+    
+        // Initially show the first slide
+        showSlide();
     </script>
 </body>
 </html>

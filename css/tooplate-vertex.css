@@ -9,6 +9,47 @@ https://www.tooplate.com/view/2124-vertex
 /* Loader 
 https://ihatetomatoes.net/create-custom-preloading-screen/
 */
+.simply-countdown {
+    /* The countdown */
+    margin-bottom: 2em;
+  }
+  
+  .simply-countdown > .simply-section {
+    /* coutndown blocks */
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    
+  }
+  .simply-countdown > .simply-section > div {
+    /* countdown block inner div */
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .simply-countdown > .simply-section .simply-amount,
+  .simply-countdown > .simply-section .simply-word {
+    display: block;
+    font-weight: bold;
+    color: #393124;
+    /* amounts and words */
+  }
+  
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 25px;
+    font-family: 'TropicaGardensSans';
+    /* amounts */
+  }
+  
+  .simply-countdown > .simply-section .simply-word {
+    color: #393124;
+    font-family: 'TropicaGardensSans';
+    text-transform: uppercase;
+    font-size: 10px;
+    /* words */
+  }
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -152,7 +193,7 @@ html, body { overflow-x: hidden; }
 body { 
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
-    background-color: #333;
+    background-color: #F8F6F1;
     color: #999;
     margin: 0;
 }
@@ -179,25 +220,47 @@ p {
 span, footer {  line-height: 1.8; }
 
 .tm-btn {
+    font-family: 'TropicaGardensSans';
     border-radius: 20px;
     display: inline-block;
-    border: 1px solid #666;
+    border: 1px solid #7b6355;
     background-color: transparent;
-    color: #999;
+    color: #7b6355;
     padding: 10px 50px;
     font-size: 20px;
 }
 
 .tm-btn:hover {
     color: white;
-    background-color: #99CC99;
-    border-color: #99CC99;
+    background-color: #7b6355;
+    border-color: #7b6355;
 }
 
-.tm-text-small { font-size: 0.9em; }
-.tm-text-center { text-align: center; }
-.tm-text-right { text-align: right; }
-.tm-text-primary { color: #99CC99; }
+.tm-text-small { 
+    font-size: 0.9em; 
+    font-family: 'Work Sans';
+}
+.tm-text-center { 
+    text-align: center;
+    font-family: 'Work Sans';
+ }
+.tm-text-right { 
+    text-align: right;
+    font-family: 'Work Sans';
+ }
+.tm-text-primary { 
+    font-family: 'TropicaGardensSans';
+    color: #393124;
+    font-size: 3rem;
+ }
+ @media (max-width: 768px) {
+    /* Adjust the styles for the paragraphs on mobile */
+    .tm-text-primary {
+        font-size: 1.5rem; /* You can adjust the font size as needed for mobile readability */
+        line-height: 1.5; /* Adjust line height for better readability on mobile */
+        margin-bottom: 20px; /* Add spacing between paragraphs on mobile */
+    }
+}
 .tm-text-secondary { color: #9999CC; }
 .tm-text-link { color: #999; }
 .tm-text-link:hover { color: #99CC99; }
@@ -205,7 +268,7 @@ span, footer {  line-height: 1.8; }
 
 .tm-hr {
     border-color: #555;
-    max-width: 340px;
+   
     width: 100%;    
 }
 
@@ -238,11 +301,13 @@ span, footer {  line-height: 1.8; }
 }
 
 .tm-content {
-    padding: 100px 90px 100px 90px;
+    padding: 80px 90px 100px 90px;
     box-sizing: border-box;
 }
 
-.tm-content-small { padding: 100px 90px 100px 60px; }
+.tm-content-small { 
+    padding: 100px 90px 100px 60px; 
+}
 .tm-content-small-top { padding-top: 90px; }
 
 .tm-row {
@@ -312,8 +377,7 @@ span, footer {  line-height: 1.8; }
 
 /* Introduction */
 .tm-media {
-    display: flex;
-    align-items: flex-start;
+  
     margin-bottom: 70px;
 }
 

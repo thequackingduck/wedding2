@@ -9,6 +9,71 @@ https://www.tooplate.com/view/2124-vertex
 /* Loader 
 https://ihatetomatoes.net/create-custom-preloading-screen/
 */
+@font-face {
+    font-family: 'SergioTrendy';
+    src: url("../2124_vertex/fontawesome/SergioTrendy.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OraSepira';
+    src: url("../2124_vertex/fontawesome/Ora_Sepira/Ora_Sepira_Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OraSepiraItalic';
+    src: url("../2124_vertex/fontawesome/Ora_Sepira/Ora_Sepira_Italic.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LoveCraft';
+    src: url("../2124_vertex/fontawesome/Love_Craft/LoveCraft.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LoveCraftItalic';
+    src: url("../2124_vertex/fontawesome/Love_Craft/LoveCraftItalic.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TropicaGardensSans';
+    src: url("../2124_vertex/fontawesome/Tropica_Gardens/tropica-gardens-sans.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TropicaGardensScript';
+    src: url("../2124_vertex/fontawesome/Tropica_Gardens/tropica-gardens-script.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TropicaGardensSerif';
+    src: url("../2124_vertex/fontawesome/Tropica_Gardens/tropica-gardens-serif.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TropikaIslandInt';
+    src: url("../2124_vertex/fontawesome/Tropika_Island/Tropika_Island_Int.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TropikaIslandScript';
+    src: url("../2124_vertex/fontawesome/Tropika_Island/Tropika_Island_Script_Casual.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 .simply-countdown {
     /* The countdown */
     margin-bottom: 2em;
@@ -39,13 +104,13 @@ https://ihatetomatoes.net/create-custom-preloading-screen/
   
   .simply-countdown > .simply-section .simply-amount {
     font-size: 25px;
-    font-family: 'TropicaGardensSans';
+    font-family: 'TropicaGardensSerif';
     /* amounts */
   }
   
   .simply-countdown > .simply-section .simply-word {
     color: #393124;
-    font-family: 'TropicaGardensSans';
+    font-family: 'TropicaGardensSerif';
     text-transform: uppercase;
     font-size: 10px;
     /* words */
@@ -220,7 +285,7 @@ p {
 span, footer {  line-height: 1.8; }
 
 .tm-btn {
-    font-family: 'TropicaGardensSans';
+    font-family: 'Work Sans';
     border-radius: 1px;
     display: inline-block;
     border: 1px solid #7b6355;

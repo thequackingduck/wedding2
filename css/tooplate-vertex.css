@@ -221,7 +221,7 @@ span, footer {  line-height: 1.8; }
 
 .tm-btn {
     font-family: 'TropicaGardensSans';
-    border-radius: 20px;
+    border-radius: 1px;
     display: inline-block;
     border: 1px solid #7b6355;
     background-color: transparent;
@@ -251,7 +251,7 @@ span, footer {  line-height: 1.8; }
 .tm-text-primary { 
     font-family: 'TropicaGardensSans';
     color: #393124;
-    font-size: 3rem;
+    font-size: 1.5rem;
  }
  @media (max-width: 768px) {
     /* Adjust the styles for the paragraphs on mobile */
@@ -377,7 +377,8 @@ span, footer {  line-height: 1.8; }
 
 /* Introduction */
 .tm-media {
-  
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 70px;
 }
 
@@ -424,10 +425,10 @@ span, footer {  line-height: 1.8; }
 	/* float: left; */
 	overflow: hidden;
 	margin: 15px;
-	min-width: 200px;
+	/* min-width: 200px;
 	max-width: 250px;
-	max-height: 250px;
-	width: 25%;
+	max-height: 250px; */
+	width: 100%;
 	text-align: center;
 	cursor: pointer;
 }

@@ -805,22 +805,16 @@
         };
     </script>
     <script>
-        var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+        // Specify the target future date (May 2, 2024)
+var targetDate = new Date('2024-05-02');
 
-        // default example
-        simplyCountdown('.simply-countdown-one', {
-            year: d.getFullYear(),
-            month: d.getMonth() + 1,
-            day: d.getDate()
-        });
+// Initialize the countdown timer
+simplyCountdown('.simply-countdown-one', {
+    year: targetDate.getFullYear(),
+    month: targetDate.getMonth() + 1,
+    day: targetDate.getDate()
+});
 
-        //jQuery example
-        $('#simply-countdown-losange').simplyCountdown({
-            year: d.getFullYear(),
-            month: d.getMonth() + 1,
-            day: d.getDate(),
-            enableUtc: false
-        });
     </script>
     
 </body>

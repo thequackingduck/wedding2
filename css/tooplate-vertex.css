@@ -10,6 +10,18 @@ https://www.tooplate.com/view/2124-vertex
 https://ihatetomatoes.net/create-custom-preloading-screen/
 */
 @font-face {
+    font-family: 'DidotBold';
+    src: url("../2124_vertex/fontawesome/didot-ssv/DidotLTStdBold.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DidotRegular';
+    src: url("../2124_vertex/fontawesome/didot-ssv/DidotRegular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'SergioTrendy';
     src: url("../2124_vertex/fontawesome/SergioTrendy.woff") format('woff');
     font-weight: normal;

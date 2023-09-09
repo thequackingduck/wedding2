@@ -27,7 +27,68 @@
 
 </head>
 
-<body >
+<style>
+    .book {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 11px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+ 
+ 
+ 
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+
+   </style>
+
+<body style="background-color: #009f9f;">
     <!-- Page Loader -->
     <div id="loader-wrapper">
         <!-- <div id="loader"></div> -->
@@ -89,7 +150,7 @@
     </nav> -->
 
     <!-- Content -->
-    <main style="background-color: #008080;">
+    <main style="background-color: #009f9f;">
         
         <div id="intro" class="tm-section">
             
@@ -104,17 +165,27 @@
                     <h2 class="tm-text-primary tm-text-center"
                         style="font-family: 'Work Sans'; font-size: 1.5rem; margin-top: -5%; color: #ffffff;">Panglao, Bohol, Philippines</h2>
                     <div class="simply-countdown simply-countdown-one"></div>
-                    <a href="#gallery" class="tm-btn tm-btn-next button" style="font-family: 'Work Sans'; color: #ffffff;">RVSP</a>
+                    <a href="reservation.html" class="tm-btn tm-btn-next button" style="font-family: 'Work Sans'; color: #ffffff;">RVSP</a>
                 </div>
 
 
             </div>
 
-            <div class="tm-section-col tm-parallax" data-parallax="scroll" style="border-radius: 0px;
-            background: #008080;
-            box-shadow:  -10px -10px 20px #003333, 10px -10px 5px #00cdcd;">
+            <div class="tm-section-col tm-parallax" data-parallax="scroll" style="background: #008080;">
+            <div class="book">
+                
+               
                 <img src="img/photo4.jpg" style="width: 100%; height: 100%;">
+                
+                
+                
+                <div class="cover" style="background-image: url('img/1-1.png'); background-size: cover;">
+                    <p>Invitation Card</p>
+                </div>
+               </div>
+                
             </div>
+           
 
            
             <!-- <div class="tm-content" >
@@ -226,7 +297,7 @@
 
 
         <div id="gallery" class="tm-content tm-content-small-top" style="border-radius: 0px;
-        background: #008080;
+        background: #009f9f; 
         box-shadow: inset -10px -10px 20px #003333,
                     inset 10px 10px 20px #003333;">
             <div class="tm-gallery-container">
@@ -246,7 +317,7 @@
 
                 </div>
                 <div class="tm-text-center" data-aos="fade-up">
-                    <a href="#services" id="flight" class="tm-btn tm-btn-next button" style="color: #ffffff;">Book your Flight Now!</a>
+                    <a href="flight.html" id="flight" class="tm-btn tm-btn-next button" style="color: #ffffff;">Book your Flight Now!</a>
                 </div>
 
             </div>
@@ -256,81 +327,101 @@
 
         <div id="intro" class="tm-section">
             <!-- Intro left -->
-            <div class="tm-section-col tm-content collage" style="color: #393124; background-image: url('img/4.png'); background-size: cover;">
+            <div class="tm-section-col tm-content collage" style="color: #393124; background-image: url('img/main_banner.png'); background-size: cover;">
                 <div class="tm-media" data-aos="fade-right" style="margin-bottom: 2%;">
-                    <h2 class="tm-text-primary tm-text-center" style="font-size: 3rem; font-family: 'SergioTrendy';">DAY 1</h2>
-                    <div class="tm-media-body" style="width: 78%;">
-                        <div class="tm-row" style="margin-bottom: -15%;">
-                            <div class="tm-col" style="text-align: center;">
-                                <div class="tm-text-center">
-                                    <i class="fas fa-clock fa-2x"></i>
-                                </div>                        
-                                <p>AFTERNOON</p>
-                            </div>
-                            <div class="tm-col" style="text-align: center;">
-                                <div class="tm-text-center">
-                                    <i class="fas fa-tree fa-2x"></i>
-                                </div>                        
-                                <p>Venue to be announced</p>
-                            </div>
-                        </div>
-                        <hr class="tm-hr tm-mr">
-                        <h2><a href="#" class="tm-text-primary">Schedule</a></h2>
-                        <table style="width:100%; margin-left: 5%; text-align: left; font-family: 'Work Sans';">
-                            <tr>
-                                <td>2PM - Let's drink and hit the beach.</td>
-                            </tr>
-                            <tr>
-                                <td>4PM - Let's get entertained.</td>
-                            </tr>
-                            <tr>
-                                <td>5PM - Let's watch the sunset.</td>
-                            </tr>
-                            <tr>
-                                <td>7PM - Let's drink again.</td>
-                            </tr>
+                    
+                    
 
-                        </table>
-                        <hr class="tm-hr tm-mr">
-                    </div>
-                </div>
+                    <div class="card">
+                        <div class="card-details ">
+                            <p class="text-title" style="text-align: center;">DAY 1</p>
+                            <div class="tm-row" style="margin-top: -20px;">
+                                <div class="tm-col tm-text-center">
+                                    <div class="tm-text-center">
+                                        <i class="fas fa-clock fa-2x"></i>
+                                    </div>
+                                    <p>AFTERNOON</p>
+                                </div>
+                                <div class="tm-col tm-text-center">
+                                    <div>
+                                        <i class="fas fa-tree fa-2x"></i>
+                                    </div>
+                                    <p>SOUTH PALMS RESORT</p>
+                                </div>
+                            </div>
+                            <p class="text-body tm-text-primary tm-text-center"> SCHEDULE:</p>
+                            <table style="width:100%; margin-left: 5%; text-align: left;">
+                                <tr>
+                                    <td>2PM - Let's drink and hit the beach.</td>
+                                </tr>
+                                <tr>
+                                    <td>4PM - Let's get entertained.</td>
+                                </tr>
+                                <tr>
+                                    <td>5PM - Let's watch the sunset.</td>
+                                </tr>
+                                <tr>
+                                    <td>7PM - Let's drink again.</td>
+                                </tr>
+    
+                            </table>
+                        </div>
+                        
+                        
+                        <button class="card-button"><a href="flight.html" style="text-decoration: none;">More info</a></button>
+                      </div>
+
+                   
+                
+               
+            </div>
 
                 <div class="tm-media" data-aos="fade-right" style="margin-bottom: 2%;">
-                    <h2 class="tm-text-primary tm-text-center" style="font-size: 3rem; font-family: 'SergioTrendy';">DAY 2</h2>
-                    <div class="tm-media-body" style="width: 78%;">
-                        <div class="tm-row" style="margin-bottom: -15%;" >
-                            <div class="tm-col" style="text-align: center;">
-                                <div class="tm-text-center">
-                                    <i class="fas fa-clock fa-2x"></i>
-                                </div>                        
-                                <p>AFTERNOON</p>
-                            </div>
-                            <div class="tm-col" style="text-align: center;">
-                                <div class="tm-text-center">
-                                    <i class="fas fa-tree fa-2x"></i>
-                                </div>                        
-                                <p>Venue to be announced</p>
-                            </div>
-                        </div>
-                        <hr class="tm-hr tm-mr">
-                        <h2><a href="#" class="tm-text-primary">Schedule</a></h2>
-                        <table style="width:100%; margin-left: 5%; text-align: left; font-family: 'Work Sans';">
-                            <tr>
-                                <td>2PM - Let's drink and hit the beach.</td>
-                            </tr>
-                            <tr>
-                                <td>4PM - Let's get entertained.</td>
-                            </tr>
-                            <tr>
-                                <td>5PM - Let's watch the sunset.</td>
-                            </tr>
-                            <tr>
-                                <td>7PM - Let's drink again.</td>
-                            </tr>
+                    
+                    
 
-                        </table>
-                        <hr class="tm-hr tm-mr">
-                    </div>
+                        <div class="card">
+                            <div class="card-details ">
+                                <p class="text-title" style="text-align: center;">DAY 2</p>
+                                <div class="tm-row" style="margin-top: -20px;">
+                                    <div class="tm-col tm-text-center">
+                                        <div class="tm-text-center">
+                                            <i class="fas fa-clock fa-2x"></i>
+                                        </div>
+                                        <p>AFTERNOON</p>
+                                    </div>
+                                    <div class="tm-col tm-text-center">
+                                        <div>
+                                            <i class="fas fa-tree fa-2x"></i>
+                                        </div>
+                                        <p>SOUTH PALMS RESORT</p>
+                                    </div>
+                                </div>
+                                <p class="text-body tm-text-primary tm-text-center"> SCHEDULE:</p>
+                                <table style="width:100%; margin-left: 5%; text-align: left;">
+                                    <tr>
+                                        <td>2PM - Let's drink and hit the beach.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4PM - Let's get entertained.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5PM - Let's watch the sunset.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7PM - Let's drink again.</td>
+                                    </tr>
+        
+                                </table>
+                            </div>
+                            
+                            
+                            <button class="card-button"><a href="flight.html" style="text-decoration: none;">More info</a></button>
+                          </div>
+
+                       
+                    
+                   
                 </div>
 
                 <!-- <div class="tm-media tm-text-center">
@@ -396,40 +487,43 @@
 
        
         <div class="horizontal-content" style="border-radius: 0px;
-        background: #008080;
+        background: #009f9f;
         box-shadow: inset -31px 31px 62px #006161,
                     inset 31px -31px 62px #009f9f;padding-top: 3%;">
             <h2 class="tm-text-primary" style="font-size: 2rem; font-family: 'SergioTrendy';" data-aos="fade-up">Best Spots You Can Visit in Bohol!</h2>
     
-            <div class="responsive" style="padding-bottom: 5%;">
-                <div class="gallery" data-aos="fade-up">
+            <div class="responsive" style="padding-bottom: 5%;" data-aos="fade-up">
+                <div class="gallery " >
                     <a target="_blank" href="https://www.google.com/maps/place/Chocolate+Hills/@9.8297288,124.1293758,15z/data=!3m1!4b1!4m6!3m5!1s0x33aa3da1a65d72f7:0xd89c856a3307dd67!8m2!3d9.829708!4d124.1396756!16zL20vMDF2N2dj?entry=ttu">
                         <img src="img/chocolate_hills.jpg" alt="Cinque Terre" width="300" height="200">
                     </a>
                     <div class="desc">Chocolate Hills</div>
                 </div>
-                <div class="gallery" data-aos="fade-up">
+                <div class="gallery " >
                     <a target="_blank" href="https://www.google.com/maps/place/Loboc+River+Cruise/@9.6348028,124.0272504,17z/data=!3m1!4b1!4m6!3m5!1s0x33aa4450a8151d9b:0x80a384a306e0aafb!8m2!3d9.6347975!4d124.0298253!16s%2Fg%2F1tx12xjv?entry=ttu">
                         <img src="img/loboc-river.jpg" alt="Cinque Terre" width="300" height="200">
                     </a>
                     <div class="desc">Loboc River Cruise</div>
                 </div>
-                <div class="gallery" data-aos="fade-up">
+                <div class="gallery " >
                     <a target="_blank" href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu">
                         <img src="img/island-hoping.jpg" alt="Cinque Terre" width="300" height="200">
                     </a>
                     <div class="desc">Panglao Island Hopping</div>
                 </div>
-                <div class="gallery" data-aos="fade-up">
+                <div class="gallery " >
                     <a target="_blank" href="https://www.google.com/maps/place/Bilar+Man-Made+Forest/@9.6642376,124.0758991,17z/data=!3m1!4b1!4m6!3m5!1s0x33aa4158fa167357:0xef93d9624ddbd561!8m2!3d9.6642323!4d124.078474!16s%2Fg%2F12hl93qk2?entry=ttu">
                         <img src="img/man-made-forest.jpg" alt="Cinque Terre" width="300" height="200">
                     </a>
                     <div class="desc">Man-made Forest</div>
                 </div>
+                
             </div>
     
-            <div class="social-link" style="padding-bottom: 3%;" data-aos="fade-up">
-                <a target="_blank" href="https://www.facebook.com/justinlomod.corpuz">
+            
+        
+        <div class="social-link" style="padding-bottom: 3% 0% 3% 0%;" >
+                <!-- <a target="_blank" href="https://www.facebook.com/justinlomod.corpuz">
                     <i class="fab fa-facebook fa-1x"></i> Facebook
                 </a>
             
@@ -439,10 +533,22 @@
            
                 <a target="_blank" href="tel:+123456789">
                     <i class="fa fa-phone fa-1x"></i> Phone
-                </a>
+                </a> -->
+
+                <div class="card-social">
+                    <span style="font-size: 2rem; font-family: 'SergioTrendy';" >Contact Us</span>
+                    <a class="social-link" href="https://www.facebook.com">
+                      <i class="fab fa-facebook fa-1x"></i>
+                    </a>
+                    <a class="social-link" href="https://www.facebook.com">
+                      <i class="fab fa-google fa-1x"></i>
+                    </a>
+                    <a class="social-link" href="https://www.facebook.com">
+                        <i class="fa fa-phone fa-1x"></i>
+                    </a>
+                    
+                  </div>
             </div>
-        </div>
-        
 
    
 

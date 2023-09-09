@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrar & Aljosa</title>
+    <link href="img/ring.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/-->
+    <link rel="stylesheet" href="css/magnific-popup.css"> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/tooplate-vertex.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/wickedcss.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.min.css" />
+   <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   <style>
+    .book {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+   </style>
+
+
+</head>
+
+<body style="background-color: #009f9f;">
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <!-- <div id="loader"></div> -->
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+    
+
+    <!-- Content -->
+    <main style="background-color: #009f9f;">
+        
+        <div id="intro" class="tm-section">
+            <!-- Intro left -->
+            <div class="tm-section-col tm-content">
+                <div class="book">
+                    <p>(Program for First Day)</p>
+                    <img src="">
+                    
+                    
+                    
+                    
+                    <div class="cover">
+                        <p>DAY 1</p>
+                    </div>
+                   </div>
+    
+               
+                
+                
+               
+                
+            </div>
+            
+            <!-- Intro right -->
+            <div class="tm-section-col tm-content">
+                <div class="book">
+                    <p>(Program for Second Day)</p>
+                    <div class="cover">
+                        <p>DAY 2</p>
+                    </div>
+                   </div>
+    
+               
+                
+                
+               
+                
+            </div>
+
+            
+        </div> <!-- #intro -->
+
+
+      
+
+
+    </main>
+    <!-- JavaScript -->
+
+    
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/simplyCountdown.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <script>
+        $(window).on("load", function () {
+            $('body').addClass('loaded');
+        });
+
+        $(function () {
+
+            /*************** Navigation *****************/
+
+            const tmMainNav = $("#tm-main-nav");
+
+            tmMainNav.singlePageNav({
+                filter: ':not(.external)'
+            });
+
+            $('.navbar-toggler').click(function (e) {
+                e.stopPropagation();
+                tmMainNav.toggleClass('show');
+            });
+
+            $("html").click(function (e) {
+                $("#tm-main-nav").removeClass("show");
+            });
+
+            /****************** Smooth Scrolling *****************/
+
+            $(".tm-btn-next").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        // window.location.hash = hash;
+                    });
+                }
+            });
+
+            $('.tm-brand-icon').on('click', function (event) {
+                $('html, body').animate({
+                    scrollTop: $('#intro').offset().top
+                }, 800);
+            });
+
+            /****************** Gallery ******************/
+
+            const galleryItems = document.querySelector(".tm-gallery").children;
+            const itemsPerPage = 10;
+            const totalPages = Math.ceil(galleryItems.length / itemsPerPage);
+            const pageAttribute = 'data-page';
+
+            function setPagination(currentPage) {
+                for (let i = 1; i <= totalPages; i++) {
+                    var $pager = '';
+
+                    if (currentPage == i) {
+                        $pager = $('<a href="javascript:void(0);" class="active tm-paging-link" ' + pageAttribute + '="' + i + '"></a>');
+                    } else {
+                        $pager = $('<a href="javascript:void(0);" class="tm-paging-link" ' + pageAttribute + '="' + i + '"></a>');
+                    }
+
+                    $pager.html(i);
+
+                    $pager.click(function () {
+                        $('.tm-paging-link').removeClass("active");
+                        $(this).addClass('active');
+                        var page = $(this).eq(0).attr(pageAttribute);
+                        showItems(page);
+                    });
+
+                    $pager.appendTo($('.tm-paging'));
+                }
+            }
+
+            function showItems(currentPage) {
+                for (let i = 0; i < galleryItems.length; i++) {
+                    galleryItems[i].classList.remove("show");
+                    galleryItems[i].classList.add("hide");
+
+                    if (i >= (currentPage * itemsPerPage) - itemsPerPage && i < currentPage * itemsPerPage) {
+                        galleryItems[i].classList.remove("hide");
+                        galleryItems[i].classList.add("show");
+                    }
+                }
+            }
+
+            setPagination(1);
+            showItems(1);
+
+            /****************** Magnific Popup ***********/
+
+            $('.tm-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+    <script>
+        function toggleStory() {
+            var storyParagraph1 = document.getElementById("storyParagraph1");
+            var storyParagraph2 = document.getElementById("storyParagraph2");
+            var storyParagraph3 = document.getElementById("storyParagraph3");
+            var seeMoreButton = document.querySelector(".see-more");
+            var seeLessButton = document.querySelector(".see-less");
+
+            if (storyParagraph1.style.display === "none") {
+                storyParagraph1.style.display = "block";
+                storyParagraph2.style.display = "block";
+                storyParagraph3.style.display = "block";
+                seeMoreButton.style.display = "none";
+                seeLessButton.style.display = "inline";
+            } else {
+                storyParagraph1.style.display = "none";
+                storyParagraph2.style.display = "none";
+                storyParagraph3.style.display = "none";
+                seeMoreButton.style.display = "inline";
+                seeLessButton.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        // JavaScript to show the overlay and pop-up
+        function showPopup() {
+            var overlay = document.getElementById('overlay');
+            var popup = document.getElementById('popup');
+            overlay.style.display = 'block';
+            popup.style.display = 'block';
+        }
+
+        // JavaScript to close the overlay and pop-up
+        function closePopup() {
+            var overlay = document.getElementById('overlay');
+            var popup = document.getElementById('popup');
+            overlay.style.display = 'none';
+            popup.style.display = 'none';
+        }
+
+        // Automatically show the pop-up when the page loads
+        window.onload = function () {
+            showPopup();
+        };
+    </script>
+    <script>
+        // Specify the target future date (May 2, 2024)
+var targetDate = new Date('2024-05-02');
+
+// Initialize the countdown timer
+simplyCountdown('.simply-countdown-one', {
+    year: targetDate.getFullYear(),
+    month: targetDate.getMonth() + 1,
+    day: targetDate.getDate()
+});
+
+    </script>
+    
+</body>
+
+</html>

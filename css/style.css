@@ -288,17 +288,29 @@
 
 
   
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 768px) {
     .responsive {
-        
-      width: 49.99999%;
+        margin-right: 11%;
+        flex-direction: column;
+    align-items: center;
+      width: 100%;
       margin: 6px 0;
+    }
+    .social-link {
+        flex-direction: column;
+        align-items: center;
+    }
+    .horizontal-content {
+        padding-top: 5%;
+    }
+    .gallery.button {
+        margin: 10px 0px 10px 35px;
     }
   }
   
   @media only screen and (max-width: 425px) {
     .responsive {
-    
+      margin-right: 11%;
       width: 100%;
     }
   }
@@ -315,6 +327,9 @@
 }
 
 .social-link {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
     margin-right: 20px; /* Adjust as needed for spacing between links */
 }
 
@@ -333,7 +348,11 @@
     margin-right: 5px;
 }
 .horizontal-content {
-
+    border-radius: 0px;
+    background: #009f9f;
+    box-shadow: inset -31px 31px 62px #006161,
+                inset 31px -31px 62px #009f9f;
+    padding-top: 3%;
     align-items: center;
     text-align: center;
 }
@@ -341,6 +360,8 @@
 .responsive {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .gallery {
@@ -350,3 +371,182 @@
 .social-link {
     margin-top: 10px;
 }
+.card {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-radius: 26px;
+background: #008080;
+box-shadow: inset 21px 21px 7px #006d6d,
+            inset -21px -21px 7px #009393;
+    position: relative;
+    padding: 1.8rem;
+   margin-bottom: 10%;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-details {
+    color: black;
+    height: 100%;
+
+   }
+   
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #009f9f;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    text-align: left;
+    margin-right: 5%;
+    margin-top: -6%;
+    color: black;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #009f9f;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+
+/*Social Links*/
+.card-social svg {
+    height: 25px;
+  }
+  
+  .card-social {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7e7e7;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    height: 50px;
+    width: 200px;
+  }
+  
+  .card-social::before, .card-social::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    transition: 0.25s linear;
+    z-index: 1;
+  }
+  
+  .card-social::before {
+    content: "";
+    left: 0;
+    justify-content: flex-end;
+    background-color: #008080;
+  }
+  
+  .card-social::after {
+    content: "";
+    right: 0;
+    justify-content: flex-start;
+    background-color: #009f9f;
+  }
+  
+  .card-social:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .card-social:hover span {
+    opacity: 0;
+    z-index: -3;
+  }
+  
+  .card-social:hover::before {
+    opacity: 0.5;
+    transform: translateY(-100%);
+  }
+  
+  .card-social:hover::after {
+    opacity: 0.5;
+    transform: translateY(100%);
+  }
+  
+  .card-social span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-family: 'Fira Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+  }
+  
+  .card-social .social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+  
+  .card-social .social-link svg {
+    text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+    transform: scale(1);
+  }
+  
+  .card-social .social-link:hover {
+    background-color: teal;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }

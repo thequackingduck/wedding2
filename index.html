@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrar & Aljosa</title>
+    <link href="img/ring.png" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
@@ -13,180 +14,23 @@
     <link rel="stylesheet" href="css/magnific-popup.css"> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
     <link rel="stylesheet" href="css/tooplate-vertex.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/wickedcss.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.min.css" />
+   <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   
 
 
 </head>
-<style>
-    
-
-    .tm-section-col.tm-parallax .tm-content {
-        position: absolute;
-        bottom: 20%;
-        right: 0;
-        color: white;
-        padding: 10px;
-        text-align: right;
-    }
-
-    @media (max-width: 768px) {
-
-        .tm-section-col.tm-parallax {
-            text-align: center;
-        }
-
-        .tm-section-col.tm-parallax .tm-content {
-            position: static;
-            margin-top: 15%;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-    }
-
-    @media (min-width: 1024px) {
-
-        .tm-section-col.tm-parallax .tm-content {
-            position: absolute;
-            bottom: 1%;
-            right: 0;
-            color: white;
-            padding: 10px;
-            text-align: right;
-            font-size: 1.5rem;
-        }
-
-        #intro-content {
-            height: 500px;
-        }
-
-        #intro-content h2 {
-            font-size: 2rem;
-        }
-
-    }
-
-    .see-more,
-    .see-less {
-
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .see-less {
-        display: none;
-    }
-
-    #storyParagraph1,
-    #storyParagraph2,
-    #storyParagraph3 {
-        display: none;
-    }
-
-    p {
-        font-family: 'Work Sans';
-    }
-
-    @media (max-width: 768px) {
-
-        /* Adjust the styles for the paragraphs on mobile */
-        .mobile-paragraph {
-            font-size: 16px;
-            /* You can adjust the font size as needed for mobile readability */
-            line-height: 1.5;
-            /* Adjust line height for better readability on mobile */
-            margin-bottom: 20px;
-            /* Add spacing between paragraphs on mobile */
-        }
-    }
-
-    /* Style for the overlay background */
-    .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: 2;
-    }
-
-    /* Style for the pop-up container */
-    .popup-container {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #ffffff;
-        padding: 20px;
-        border: 1px solid #ccc;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        z-index: 3;
-    }
-
-    /* Style for the close button */
-    .popup-close {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        cursor: pointer;
-    }
-
-    #flight {
-        width: 40%;
-        font-size: 2rem;
-    }
-
-    @media (max-width: 768px) {
-
-        /* Adjust the styles for the paragraphs on mobile */
-        #flight {
-            width: 80%;
-            font-size: 1rem;
-        }
-    }
-
-    .carousel-container {
-            overflow: hidden;
-        }
-
-        .carousel {
-            display: flex;
-            transition: transform 1s ease-in-out;
-        }
-
-        .carousel-item {
-            flex-shrink: 0;
-            width: 100%;
-            min-width: 100%;
-        }
-        #carousel-container {
-            overflow: hidden;
-        }
-
-        #carousel {
-            display: flex;
-            transition: transform 1s ease-in-out;
-        }
-
-        #carousel-item {
-            flex-shrink: 0;
-            width: 100%;
-            min-width: 100%;
-        }
-        
-</style>
-
-
-
 
 <body >
     <!-- Page Loader -->
     <div id="loader-wrapper">
-        <div id="loader"></div>
+        <!-- <div id="loader"></div> -->
 
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
@@ -251,22 +95,22 @@
             
             
             <!-- Intro left -->
-            <div class="tm-section-col tm-content " id="intro-content" style="height: 780px;text-align: center;" data-animate-effect="animated">
-                <h1 class="tm-text-primary tm-text-center animated" 
-                        style="font-family: 'OraSepira'; margin-top: 20%; font-size: 4.5rem;">Abrar & Aljosa</h1>
-                <div class="tm-content" style="padding: 50px 20px 50px 20px;">
+            <div class="tm-section-col tm-content" id="intro-content" style="background-image: url('img/1.png'); background-size: cover; height: 780px;text-align: center;">
+                <h1 class="tm-text-primary tm-text-center " data-aos="zoom-in" 
+                        style="font-family: 'OraSepira'; margin-top: 20%; font-size: 4.5rem; color: #ffffff;">Abrar & Aljosa</h1>
+                <div class="tm-content" style="padding: 50px 20px 50px 20px;" data-aos="fade-up">
                     <h2 class="tm-text-primary tm-text-center"
-                        style="font-family: 'Work Sans'; line-height: normal; font-size: 1.5rem; ">Thursday | May 2, 2024 </h2>
+                        style="font-family: 'Work Sans'; line-height: normal; font-size: 1.5rem; color: #ffffff;">Thursday | May 2, 2024 </h2>
                     <h2 class="tm-text-primary tm-text-center"
-                        style="font-family: 'Work Sans'; font-size: 1.5rem; margin-top: -5%;">Panglao, Bohol, Philippines</h2>
+                        style="font-family: 'Work Sans'; font-size: 1.5rem; margin-top: -5%; color: #ffffff;">Panglao, Bohol, Philippines</h2>
                     <div class="simply-countdown simply-countdown-one"></div>
-                    <a href="#gallery" class="tm-btn tm-btn-next" style="font-family: 'Work Sans';">RVSP</a>
+                    <a href="#gallery" class="tm-btn tm-btn-next" style="font-family: 'Work Sans'; color: #ffffff;">RVSP</a>
                 </div>
 
 
             </div>
 
-            <div class="tm-section-col tm-parallax" data-parallax="scroll" data-image-src="img/invitation.png"></div>
+            <div class="tm-section-col tm-parallax" data-parallax="scroll"  data-image-src="img/main.jpg"></div>
 
            
             <!-- <div class="tm-content" >
@@ -287,9 +131,9 @@
 
         </div> <!-- #intro -->
 
-        <div id="services" class="tm-section" >
+        <div id="services" class="tm-section" style="background-image: url('img/tropical.png'); background-size: cover;">
 
-            <div class="carousel-container" style="background-color: #a48170;">
+            <div class="carousel-container" data-aos="fade-right">
                 <div class="carousel2" id="carousel">
                     <div class="carousel-item2" id="carousel-item"><img src="img/photo7.jpg" alt="Image 1" style="padding: 2%; width: 100%; height: 100%; object-fit: contain;"></div>
                     <div class="carousel-item2" id="carousel-item"><img src="img/photo9.jpg" alt="Image 2" style="padding: 2%; width: 100%; height: 100%; object-fit: contain;"></div>
@@ -322,12 +166,9 @@
             </script>
             
             <!-- Services left -->
-            <div class="tm-section-col tm-content" style="height: 780px;text-align: justify; color: #393124;">
+            <div class="tm-section-col tm-content" style=" height: 780px;text-align: justify; color: #ffffff; padding: 50px;" data-aos="fade-left">
                 <h2 class="tm-text-primary" style="text-align: center; font-family: 'SergioTrendy'; font-size: 3rem;">Our Story
                 </h2>
-                <p class="mobile-paragraph"> 
-                    Join us on a journey that transcends borders and cultures, as we delve into the heartwarming union
-                    of Abrar and Aljosa.</p>
 
                 <p class="mobile-paragraph">In a world where paths converged and hearts found their home, their story is
                     a testament to the magic of serendipity.
@@ -380,10 +221,10 @@
 
 
 
-        <div id="gallery" class="tm-content tm-content-small-top">
+        <div id="gallery" class="tm-content tm-content-small-top" style="background-image: url('img/3.png'); background-size: cover; ">
             <div class="tm-gallery-container">
-                <h2 class="tm-text-primary tm-text-center" style="font-size: 3rem; font-family: 'SergioTrendy';">Program</h2>
-                <div class="tm-gallery tm-mb-80">
+                <h2 class="tm-text-primary tm-text-center" style="font-size: 3rem; font-family: 'SergioTrendy';" data-aos="fade-up">Program</h2>
+                <div class="tm-gallery tm-mb-80" data-aos="fade-up">
 
                     <video autoplay loop muted playsinline class="background-video"
                         style="width: 100%; height: 100%; object-fit: cover;">
@@ -397,8 +238,8 @@
 
 
                 </div>
-                <div class="tm-text-center">
-                    <a href="#services" id="flight" class="tm-btn tm-btn-next">Book your Flight Now!</a>
+                <div class="tm-text-center" data-aos="fade-up">
+                    <a href="#services" id="flight" class="tm-btn tm-btn-next button" style="color: #ffffff;">Book your Flight Now!</a>
                 </div>
 
             </div>
@@ -408,11 +249,11 @@
 
         <div id="intro" class="tm-section">
             <!-- Intro left -->
-            <div class="tm-section-col tm-content" style="color: #393124;">
-                <div class="tm-media">
-                    <img src="img/day1.png" alt="Intro image">
-                    <div class="tm-media-body">
-                        <div class="tm-row" style="margin-bottom: -10%;" >
+            <div class="tm-section-col tm-content" style="color: #393124; background-image: url('img/4.png'); background-size: cover;">
+                <div class="tm-media" data-aos="fade-right" style="margin-bottom: 2%;">
+                    <h2 class="tm-text-primary tm-text-center" style="font-size: 3rem; font-family: 'SergioTrendy';">DAY 1</h2>
+                    <div class="tm-media-body" style="width: 78%;">
+                        <div class="tm-row" style="margin-bottom: -15%;">
                             <div class="tm-col" style="text-align: center;">
                                 <div class="tm-text-center">
                                     <i class="fas fa-clock fa-2x"></i>
@@ -447,10 +288,10 @@
                     </div>
                 </div>
 
-                <div class="tm-media">
-                    <img src="img/day2.png" alt="Intro image">
-                    <div class="tm-media-body">
-                        <div class="tm-row" style="margin-bottom: -10%;" >
+                <div class="tm-media" data-aos="fade-right" style="margin-bottom: 2%;">
+                    <h2 class="tm-text-primary tm-text-center" style="font-size: 3rem; font-family: 'SergioTrendy';">DAY 2</h2>
+                    <div class="tm-media-body" style="width: 78%;">
+                        <div class="tm-row" style="margin-bottom: -15%;" >
                             <div class="tm-col" style="text-align: center;">
                                 <div class="tm-text-center">
                                     <i class="fas fa-clock fa-2x"></i>
@@ -544,89 +385,71 @@
 
 
 
-        <div id="contact" class="tm-section">
-            <div id="gallery" class="tm-content tm-content-small-top" style="background-color:#a48170; color: #ffffff;">
-                <div class="tm-gallery-container">
-                    <h2 class="tm-text-primary tm-text-center tm-gallery-header" style="font-size: 2.2rem; font-family: 'SergioTrendy';">Best Spots You Can Visit in Bohol</h2>
-                    <div class="tm-gallery tm-mb-80">
-                        <figure class="effect-goliath tm-gallery-item">
-                            <img src="img/chocolate_hills.webp" alt="Image" />
-                            <figcaption>
-                                <h2>Chocolate Hills</h2>
-                                <p>Carmen, Bohol</p>
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-goliath tm-gallery-item">
-                            <img src="img/loboc-river.jpg" alt="Image" />
-                            <figcaption>
-                                <h2>Loboc River Cruise</h2>
-                                <p>Loboc, Bohol</p>
-                               
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-goliath tm-gallery-item">
-                            <img src="img/man-made-forest.jpg" alt="Image" />
-                            <figcaption>
-                                <h2>Man-made Forest</h2>
-                                <p>Bilar, Bohol</p>
-                                
-                            </figcaption>
-                        </figure>
-                        <figure class="effect-goliath tm-gallery-item">
-                            <img src="img/island-hoping.jpg" alt="Image" />
-                            <figcaption>
-                                <h2>Island Hopping</h2>
-                                <p>Panglao, Bohol</p>
-                                
-                            </figcaption>
-                        </figure>
-
-
-
-
-
-
-
-                    </div>
-
+       
+        <div class="horizontal-content" style="background-color: teal; padding-top: 3%;">
+            <h2 class="tm-text-primary" style="font-size: 2rem; font-family: 'SergioTrendy';" data-aos="fade-up">Best Spots You Can Visit in Bohol!</h2>
+    
+            <div class="responsive" style="padding-bottom: 5%;">
+                <div class="gallery" data-aos="fade-up">
+                    <a target="_blank" href="https://www.google.com/maps/place/Chocolate+Hills/@9.8297288,124.1293758,15z/data=!3m1!4b1!4m6!3m5!1s0x33aa3da1a65d72f7:0xd89c856a3307dd67!8m2!3d9.829708!4d124.1396756!16zL20vMDF2N2dj?entry=ttu">
+                        <img src="img/chocolate_hills.jpg" alt="Cinque Terre" width="300" height="200">
+                    </a>
+                    <div class="desc">Chocolate Hills</div>
+                </div>
+                <div class="gallery" data-aos="fade-up">
+                    <a target="_blank" href="https://www.google.com/maps/place/Loboc+River+Cruise/@9.6348028,124.0272504,17z/data=!3m1!4b1!4m6!3m5!1s0x33aa4450a8151d9b:0x80a384a306e0aafb!8m2!3d9.6347975!4d124.0298253!16s%2Fg%2F1tx12xjv?entry=ttu">
+                        <img src="img/loboc-river.jpg" alt="Cinque Terre" width="300" height="200">
+                    </a>
+                    <div class="desc">Loboc River Cruise</div>
+                </div>
+                <div class="gallery" data-aos="fade-up">
+                    <a target="_blank" href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu">
+                        <img src="img/island-hoping.jpg" alt="Cinque Terre" width="300" height="200">
+                    </a>
+                    <div class="desc">Panglao Island Hopping</div>
+                </div>
+                <div class="gallery" data-aos="fade-up">
+                    <a target="_blank" href="https://www.google.com/maps/place/Bilar+Man-Made+Forest/@9.6642376,124.0758991,17z/data=!3m1!4b1!4m6!3m5!1s0x33aa4158fa167357:0xef93d9624ddbd561!8m2!3d9.6642323!4d124.078474!16s%2Fg%2F12hl93qk2?entry=ttu">
+                        <img src="img/man-made-forest.jpg" alt="Cinque Terre" width="300" height="200">
+                    </a>
+                    <div class="desc">Man-made Forest</div>
                 </div>
             </div>
-            <!-- Contact left -->
-            <div class="tm-section-col tm-content tm-content-small" >
-                <h2 class="tm-text-primary" style="font-size: 3rem; font-family: 'SergioTrendy';">Contact Us</h2>
-                <p>
-                    Feel free to send us a message. Thanks!
-                </p> 
-                <form id="contact-form" action="" method="POST" class="tm-contact-form tm-mb-200">
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control rounded-0" placeholder="Name" required />
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="6" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
-                    </div>
-
-                    <div class="form-group tm-text-right">
-                        <button type="submit" class="tm-btn">Send</button>
-                    </div>
-                </form>
-
+    
+            <div class="social-link" style="padding-bottom: 3%;" data-aos="fade-up">
+                <a target="_blank" href="https://www.facebook.com/justinlomod.corpuz">
+                    <i class="fab fa-facebook fa-1x"></i> Facebook
+                </a>
+            
+                <a target="_blank" href="https://www.facebook.com/justinlomod.corpuz">
+                    <i class="fab fa-google fa-1x"></i> Google
+                </a>
+           
+                <a target="_blank" href="tel:+123456789">
+                    <i class="fa fa-phone fa-1x"></i> Phone
+                </a>
             </div>
+        </div>
+        
+
+   
 
             <!-- Contact right -->
 
-        </div> <!-- #contact -->
+      
 
 
     </main>
+    <!-- JavaScript -->
 
+    
+    
     <script src="js/plugins.js"></script>
     <script src="js/simplyCountdown.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        
+        AOS.init();
     </script>
     
     <script>

@@ -11,7 +11,7 @@
     <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
         type='text/css'>
-    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/-->
+    <!-- <link rel="stylesheet" href="fontawesome/css/all.min.css"> https://fontawesome.com/ -->
     <link rel="stylesheet" href="css/magnific-popup.css"> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
     <link rel="stylesheet" href="css/tooplate-vertex.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -91,119 +91,121 @@
   -ms-transform: rotatey(-80deg);
   transform: rotatey(-80deg);
 }
-  /* Reservation Modal */
-  .container-rvsp {
-    position: relative;
-    max-width: 100%;
-    width: 100%;
-    background: #FCEDDA;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .container-rvsp header {
-    font-size: 1.5rem;
-    color: #000;
-    font-weight: 600;
-    text-align: center;
-    font-family: 'OraSepira'; 
-  }
-  
-  .container-rvsp .form {
-    margin-top: 15px;
-  }
-  
-  .form-rvsp .input-box {
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  .input-box label {
-    color: #000;
-  }
-  
-  .form-rvsp :where(.input-box input, .select-box, textarea) {
-    position: relative;
-    height: 35px;
-    width: 100%;
-    outline: none;
-    font-size: 1rem;
-    color: #808080;
-    margin-top: 5px;
-    border: 1px solid #EE4E34;
-    border-radius: 6px;
-    padding: 0 15px;
-    background: #FCEDDA;
-  }
-  
-  .input-box input:focus {
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  }
-  
+/* Reservation Modal */
+.container-rvsp {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  background: #FCEDDA;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container-rvsp header {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'OraSepira';
+}
+
+.container-rvsp .form {
+  margin-top: 15px;
+}
+
+.form-rvsp .input-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.input-box label {
+  color: #000;
+}
+
+.form-rvsp :where(.input-box input, .select-box, textarea) {
+  position: relative;
+  height: 35px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #808080;
+  margin-top: 5px;
+  border: 1px solid #EE4E34;
+  border-radius: 6px;
+  padding: 0 15px;
+  background: #FCEDDA;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-rvsp .column {
+  display: flex;
+  flex-direction: column; /* Change to a single column layout for small screens */
+  gap: 15px;
+}
+
+.form-rvsp .gender-box {
+  margin-top: 10px;
+}
+
+.form-rvsp :where(.gender-option, .gender) {
+  display: flex;
+  flex-direction: column; /* Change to a single column layout for small screens */
+  gap: 10px;
+}
+
+.gender label {
+  color: #000;
+}
+
+.address :where(input, .select-box) {
+  margin-top: 10px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #808080;
+  font-size: 1rem;
+  background: #FCEDDA;
+}
+
+.form-rvsp button {
+  height: 40px;
+  width: 100%;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #EE4E34;
+}
+
+.form-rvsp button:hover {
+  background: #EE3E34;
+}
+
+/* Add media query for mobile devices */
+@media screen and (max-width: 768px) {
   .form-rvsp .column {
-    display: flex;
-    column-gap: 15px;
+    flex-direction: row;
+    gap: 15px;
   }
-  
-  .form-rvsp .gender-box {
-    margin-top: 10px;
-  }
-  
+
   .form-rvsp :where(.gender-option, .gender) {
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
   }
-  
-  .form-rvsp .gender {
-    column-gap: 5px;
-  }
-  
-  .gender input {
-    accent-color: #EE4E34;
-  }
-  
-  .form-rvsp :where(.gender input, .gender label) {
-    cursor: pointer;
-  }
-  
-  .gender label {
-    color: #000;
-  }
-  
-  .address :where(input, .select-box) {
-    margin-top: 10px;
-  }
-  
-  .select-box select {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    color: #808080;
-    font-size: 1rem;
-    background: #FCEDDA;
-  }
-  
-  .form-rvsp button {
-    height: 40px;
-    width: 100%;
-    color: #000;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background: #EE4E34;
-  }
-  
-  .form-rvsp button:hover {
-    background: #EE3E34;
-  }
+}
+
 
   /* Flight */
 .card-flight {
@@ -268,17 +270,18 @@
 .row-flight{
     display: flex; justify-content: space-evenly;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .row-flight{
     display: flex; 
     flex-direction: column;
-    margin-left: 15%;
+    margin-left: 9%;
 }
     .tm-content-flight{
         margin-left: -10%;
     }
     
 }
+
 
 
    </style>
@@ -411,7 +414,7 @@
                     </div>
                     <button>Submit</button>
                 </form>
-              </section>
+            </section>
         </div>
       </div>
     </div>

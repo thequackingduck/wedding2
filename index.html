@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrar & Aljosa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="img/ring.png" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
     <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
@@ -28,6 +29,12 @@
 </head>
 
 <style>
+@font-face {
+  font-family: 'OraSepira';
+  src: url("../abrar&aljosa/fontawesome/Ora_Sepira/Ora_Sepira_Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+} 
     .book {
   position: relative;
   border-radius: 10px;
@@ -83,6 +90,194 @@
   -webkit-transform: rotatey(-80deg);
   -ms-transform: rotatey(-80deg);
   transform: rotatey(-80deg);
+}
+  /* Reservation Modal */
+  .container-rvsp {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    background: #FCEDDA;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-rvsp header {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'OraSepira'; 
+  }
+  
+  .container-rvsp .form {
+    margin-top: 15px;
+  }
+  
+  .form-rvsp .input-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .input-box label {
+    color: #000;
+  }
+  
+  .form-rvsp :where(.input-box input, .select-box, textarea) {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #808080;
+    margin-top: 5px;
+    border: 1px solid #EE4E34;
+    border-radius: 6px;
+    padding: 0 15px;
+    background: #FCEDDA;
+  }
+  
+  .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-rvsp .column {
+    display: flex;
+    column-gap: 15px;
+  }
+  
+  .form-rvsp .gender-box {
+    margin-top: 10px;
+  }
+  
+  .form-rvsp :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .form-rvsp .gender {
+    column-gap: 5px;
+  }
+  
+  .gender input {
+    accent-color: #EE4E34;
+  }
+  
+  .form-rvsp :where(.gender input, .gender label) {
+    cursor: pointer;
+  }
+  
+  .gender label {
+    color: #000;
+  }
+  
+  .address :where(input, .select-box) {
+    margin-top: 10px;
+  }
+  
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #808080;
+    font-size: 1rem;
+    background: #FCEDDA;
+  }
+  
+  .form-rvsp button {
+    height: 40px;
+    width: 100%;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #EE4E34;
+  }
+  
+  .form-rvsp button:hover {
+    background: #EE3E34;
+  }
+
+  /* Flight */
+.card-flight {
+  max-width: 300px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.card-flight a {
+  text-decoration: none
+}
+
+.content-flight {
+  padding: 1.1rem;
+}
+
+.image-flight {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(239, 205, 255);
+}
+
+.title-flight {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+.row-flight{
+    display: flex; justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+    .row-flight{
+    display: flex; 
+    flex-direction: column;
+    margin-left: 15%;
+}
+    .tm-content-flight{
+        margin-left: -10%;
+    }
+    
 }
 
 
@@ -153,17 +348,82 @@
     <main style="background-color: #009f9f;">
         
         <div id="intro" class="tm-section">
-            
+           
+  
+  <!-- Reservation Modal -->
+  <div class="modal fade" id="modal-rvsp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #000;"></button>
+        </div>
+        <div class="modal-body">
+            <section class="container-rvsp">
+                <header>Reserve Now!</header>
+                <form class="form-rvsp" action="#">
+                    <div class="column">
+                        <div class="input-box">
+                          <label>First Name</label>
+                          <input required="" type="text">
+                        </div>
+                        <div class="input-box">
+                          <label>Last Name</label>
+                          <input required="" type="text">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label>Email</label>
+                        <input required="" type="email">
+                    </div>
+                    <div class="gender-box">
+                      <label style="color: #000;">Can you make it?</label>
+                      <div class="gender-option">
+                        <div class="gender">
+                          <input checked="" name="gender" id="check-male" type="radio">
+                          <label for="check-male">Yes, I'm going.</label>
+                        </div>
+                        <div class="gender">
+                          <input name="gender" id="check-female" type="radio">
+                          <label for="check-female">I'm sorry I can't make it.</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="input-box address">
+                      <label>If your inivitation includes a guest, please let us know who they are.</label>
+                      <textarea rows="4" required="" type="text" placeholder="Guest Names"></textarea>
+                    </div>
+                    <div class="gender-box">
+                        <label style="color: #000;">Will you be joining us at other events?</label>
+                        <div class="gender-option">
+                          <div class="gender">
+                            <input checked="" name="gender" id="check-male" type="checkbox">
+                            <label for="check-male">Welcome Drinks.</label>
+                          </div>
+                          <div class="gender">
+                            <input name="gender" id="check-female" type="checkbox">
+                            <label for="check-female">Recovery</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="input-box">
+                        <label>What song will you get on the dance floor?</label>
+                        <input required="" type="text">
+                    </div>
+                    <button>Submit</button>
+                </form>
+              </section>
+        </div>
+      </div>
+    </div>
+  </div>
             
             <!-- Intro left -->
             <div class="tm-section-col tm-content" id="intro-content" style="background-image: url('img/1.png'); background-size: cover; height: 780px;text-align: center;">
                 <div class="tm-content" style="padding: 190px 20px 50px 20px;" data-aos="fade-up">
-                    <h2 class="tm-text-primary tm-text-center"
-                        style="font-family: 'Work Sans'; line-height: normal;  color: #ffffff;">Thursday | May 2, 2024 </h2>
-                    <h2 class="tm-text-primary tm-text-center"
-                        style="font-family: 'Work Sans';  color: #ffffff;">Panglao, Bohol, Philippines</h2>
+                    <h2 class="tm-text-primary tm-text-center" style="font-family: 'OraSepira';  color: #ffffff;">Thursday | May 2, 2024 </h2>
+                    <h2 class="tm-text-primary tm-text-center" style="font-family: 'OraSepira';  color: #ffffff;">Panglao, Bohol, Philippines</h2>
                     <div class="simply-countdown simply-countdown-one"></div>
-                    <a href="reservation.html" class="tm-btn tm-btn-next button" style="font-family: 'Work Sans'; color: #ffffff;">RVSP</a>
+                    <button type="button" class="btn tm-btn tm-btn-next button" data-bs-toggle="modal" data-bs-target="#modal-rvsp">RVSP</button>
                 </div>
 
 
@@ -240,7 +500,7 @@
             
             <!-- Services left -->
             <div class="tm-section-col tm-content" style=" height: 780px;text-align: justify; color: #ffffff; padding: 50px;" data-aos="fade-left">
-                <h2 class="tm-text-primary" style="text-align: center; font-family: 'SergioTrendy'; font-size: 3rem;">Our Story
+                <h2 class="tm-text-primary" style="text-align: center; font-family: 'OraSepira'; font-size: 3rem;">Our Story
                 </h2>
 
                 <p class="mobile-paragraph">In a world where paths converged and hearts found their home, their story is
@@ -294,12 +554,103 @@
 
 
 
-        <div id="gallery" class="tm-content tm-content-small-top" style="border-radius: 0px;
-        background: #009f9f; 
-        box-shadow: inset -10px -10px 20px #003333,
-                    inset 10px 10px 20px #003333;">
+        <div id="gallery" class="tm-content tm-content-small-top" style="border-radius: 0px; background: #009f9f; box-shadow: inset -10px -10px 20px #003333, inset 10px 10px 20px #003333;">
+
+<!-- Flight Modal -->
+<div class="modal fade" id="modal-flight" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="tm-text-primary tm-text-center" style="margin-bottom: -10px; font-size: 2rem; font-family: 'OraSepira';">Accomodations</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #000;"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row-flight">
+                <div class="col" style="margin: 1%;">
+                    <div class="card-flight">
+                        <div class="image-flight">
+                            <img src="img/south_palm_resort.jpg" style="height: 100%; width: 100%;">
+                        </div>
+                         <div class="content-flight">
+                             <span class="title-flight">
+                               South Palm Resort
+                             </span>
+                             
+                       
+                           <p class="desc">
+                             Contact Details:
+                           </p>
+                       
+                           <a class="action" href="#">
+                             Find out more
+                             <span aria-hidden="true">
+                               →
+                             </span>
+                           </a>
+                         </div>
+                       </div>
+                </div>
+
+                <div class="col" style="margin: 1%;">
+                    <div class="card-flight">
+                        <div class="image-flight">
+                            <img src="img/bohol_beach_club.jpg" style="height: 100%; width: 100%;">
+                        </div>
+                         <div class="content-flight">
+                           <a href="#">
+                             <span class="title-flight">
+                               Bohol Beach Club
+                             </span>
+                           </a>
+                       
+                           <p class="desc">
+                             Contact Details:
+                           </p>
+                       
+                           <a class="action" href="#">
+                             Find out more
+                             <span aria-hidden="true">
+                               →
+                             </span>
+                           </a>
+                         </div>
+                       </div>
+                </div>
+
+                <div class="col" style="margin: 1%;">
+                    <div class="card-flight">
+                        <div class="image-flight">
+                            <img src="img/dumaluan-beach-front.jpg" style="height: 100%; width: 100%;">
+                        </div>
+                         <div class="content-flight">
+                           <a href="#">
+                             <span class="title-flight">
+                               Dumaluan Beach
+                             </span>
+                           </a>
+                       
+                           <p class="desc">
+                             Contact Details:
+                           </p>
+                       
+                           <a class="action" href="#">
+                             Find out more
+                             <span aria-hidden="true">
+                               →
+                             </span>
+                           </a>
+                         </div>
+                       </div>
+                </div>
+
+           </div>
+        </div>
+      </div>
+    </div>
+</div>
+
             <div class="tm-gallery-container">
-                <h2 class="tm-text-primary tm-text-center" style="font-size: 3rem; font-family: 'SergioTrendy';" data-aos="fade-up">Program</h2>
+                <h2 class="tm-text-primary tm-text-center" style="font-size: 3rem; font-family: 'OraSepira';" data-aos="fade-up">Program</h2>
                 <div class="tm-gallery tm-mb-80" data-aos="fade-up">
 
                     <video autoplay loop muted playsinline class="background-video"
@@ -307,15 +658,11 @@
                         <source src="img/south_palms.mp4" type="video/mp4">
                         <!-- Add more source elements for different video formats if needed -->
                         Your browser does not support the video tag.
-
                     </video>
-
-
-
 
                 </div>
                 <div class="tm-text-center" data-aos="fade-up">
-                    <a href="flight.html" id="flight" class="tm-btn tm-btn-next button" style="color: #ffffff;">Book your Flight Now!</a>
+                    <button type="button" class="btn tm-btn tm-btn-next button" data-bs-toggle="modal" data-bs-target="#modal-flight">Book a Flight Now!</button>
                 </div>
 
             </div>
@@ -324,6 +671,36 @@
 
 
         <div id="intro" class="tm-section">
+
+<!-- Day 1 Modal -->
+<div class="modal fade" id="modal-day1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="tm-text-primary tm-text-center" style="margin-bottom: -10px; font-size: 2rem; font-family: 'OraSepira';">Program</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #000;"></button>
+        </div>
+        <div class="modal-body">
+            <img src="img/day1.png" style="width: 100%; height: 100%;">
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Day 2 Modal -->
+<div class="modal fade" id="modal-day2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="tm-text-primary tm-text-center" style="margin-bottom: -10px; font-size: 2rem; font-family: 'OraSepira';">Program</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #000;"></button>
+        </div>
+        <div class="modal-body">
+            <img src="img/day2.png" style="width: 100%; height: 100%;">
+        </div>
+      </div>
+    </div>
+</div>
             <!-- Intro left -->
             <div class="tm-section-col tm-content collage" style="color: #393124; background-image: url('img/main_banner.png'); background-size: cover;">
                 <div class="tm-media" data-aos="fade-right" style="margin-bottom: 2%;">
@@ -366,7 +743,7 @@
                         </div>
                         
                         
-                        <button class="card-button"><a href="flight.html" style="text-decoration: none;">More info</a></button>
+                        <button class="card-button" data-bs-toggle="modal" data-bs-target="#modal-day1">More info</button>
                       </div>
 
                    
@@ -414,7 +791,7 @@
                             </div>
                             
                             
-                            <button class="card-button"><a href="flight.html" style="text-decoration: none;">More info</a></button>
+                            <button class="card-button" data-bs-toggle="modal" data-bs-target="#modal-day2">More info</button>
                           </div>
 
                        
@@ -488,7 +865,7 @@
         background: #009f9f;
         box-shadow: inset -31px 31px 62px #006161,
                     inset 31px -31px 62px #009f9f;padding-top: 3%;">
-            <h2 class="tm-text-primary" style="font-size: 2rem; font-family: 'SergioTrendy';" data-aos="fade-up">Best Spots You Can Visit in Bohol!</h2>
+            <h2 class="tm-text-primary" style="font-size: 2rem; font-family: 'OraSepira';" data-aos="fade-up">Best Spots You Can Visit in Bohol!</h2>
     
             <div class="responsive" style="padding-bottom: 5%;" data-aos="fade-up">
                 <div class="gallery " >
@@ -559,7 +936,9 @@
     <!-- JavaScript -->
 
     
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
     <script src="js/plugins.js"></script>
     <script src="js/simplyCountdown.js"></script>
     <script src="js/main.js"></script>

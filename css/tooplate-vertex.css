@@ -398,10 +398,10 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* p {
+ p {
     line-height: 1.8;
-    margin-bottom: 50px;
-} */
+    /* margin-bottom: 50px; */
+} 
 
 span,
 footer {
